@@ -9,7 +9,7 @@ namespace muscshop.Models
 {
     public class Album
     {
-        Required(ErrorMessage = "enter the title")]
+        [Required(ErrorMessage = "enter the title")]
         public string Title { get; set; }
         [Range(1, 300, ErrorMessage = "enter price: 1 to 300")]
         public double Price { get; set; }
